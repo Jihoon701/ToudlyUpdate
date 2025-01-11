@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walk Through View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WalkThroughViewController" id="Y6W-OH-hqX" customClass="WalkThroughViewController" customModule="Toudly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walkThrough" translatesAutoresizingMaskIntoConstraints="NO" id="S6l-Kt-dRx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL0-Gx-tz5">
+                                <rect key="frame" x="20" y="768.5" width="374" height="53.5"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.29411764705882354" blue="0.32549019607843138" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lL0-Gx-tz5" secondAttribute="height" multiplier="7:1" id="Seu-Tu-JXw"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="toMainVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="R23-sm-rbS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="S6l-Kt-dRx" secondAttribute="trailing" id="0Cn-EC-hOP"/>
+                            <constraint firstItem="S6l-Kt-dRx" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1lu-OA-SuD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lL0-Gx-tz5" secondAttribute="bottom" constant="40" id="BHR-FF-sCY"/>
+                            <constraint firstAttribute="bottom" secondItem="S6l-Kt-dRx" secondAttribute="bottom" id="LrH-P4-LrZ"/>
+                            <constraint firstItem="S6l-Kt-dRx" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="cuG-zh-LJe"/>
+                            <constraint firstItem="lL0-Gx-tz5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="k77-b0-WN1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lL0-Gx-tz5" secondAttribute="trailing" constant="20" id="teB-Zj-gX8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Hu-nA-OeF"/>
+                    <connections>
+                        <outlet property="toMainVCButton" destination="lL0-Gx-tz5" id="hZl-rz-nBd"/>
+                        <outlet property="walkThroughImageView" destination="S6l-Kt-dRx" id="Cmw-4s-WuJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="walkThrough" width="428" height="926"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

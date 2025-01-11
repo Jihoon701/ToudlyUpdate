@@ -1,0 +1,96 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1Xd-pl-2BL"; */
+"1Xd-pl-2BL.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1ar-wx-y8k"; */
+"1ar-wx-y8k.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Xj-9H-d4d"; */
+"3Xj-9H-d4d.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3zb-YH-GD3"; */
+"3zb-YH-GD3.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "red"; ObjectID = "AgL-dW-VIA"; */
+"AgL-dW-VIA.normalTitle" = "red";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "AhA-pf-d0J"; */
+"AhA-pf-d0J.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Aio-7Z-3AC"; */
+"Aio-7Z-3AC.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CMW-gr-HNo"; */
+"CMW-gr-HNo.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Doi-ES-SeY"; */
+"Doi-ES-SeY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jh6-H4-qp0"; */
+"Jh6-H4-qp0.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jz1-UV-DAP"; */
+"Jz1-UV-DAP.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NXb-hX-mkF"; */
+"NXb-hX-mkF.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QbG-OG-dia"; */
+"QbG-OG-dia.text" = "Label";
+
+/* Class = "UILabel"; text = "2022년 "; ObjectID = "YW2-rB-d2V"; */
+"YW2-rB-d2V.text" = "2022년 ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YxO-e9-DuE"; */
+"YxO-e9-DuE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bHl-2o-CMG"; */
+"bHl-2o-CMG.text" = "Label";
+
+/* Class = "UILabel"; text = "상세 기록"; ObjectID = "fjX-ub-kKJ"; */
+"fjX-ub-kKJ.text" = "상세 기록";
+
+/* Class = "UIButton"; normalTitle = "turquoise"; ObjectID = "ftn-nW-4Jc"; */
+"ftn-nW-4Jc.normalTitle" = "turquoise";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "g3h-76-t2G"; */
+"g3h-76-t2G.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "투두리스트를 검색하세요!"; ObjectID = "hVH-Ch-nST"; */
+"hVH-Ch-nST.placeholder" = "투두리스트를 검색하세요!";
+
+/* Class = "UILabel"; text = "설정"; ObjectID = "kx2-eF-wLo"; */
+"kx2-eF-wLo.text" = "설정";
+
+/* Class = "UITextField"; text = "TodoList Content"; ObjectID = "los-wj-9sS"; */
+"los-wj-9sS.text" = "TodoList Content";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oeX-Lc-uge"; */
+"oeX-Lc-uge.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "otm-he-7m6"; */
+"otm-he-7m6.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oy8-Qg-c5e"; */
+"oy8-Qg-c5e.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "yellow"; ObjectID = "p9n-1f-s1H"; */
+"p9n-1f-s1H.normalTitle" = "yellow";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "qY1-cj-GHy"; */
+"qY1-cj-GHy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tbs-aA-eRa"; */
+"tbs-aA-eRa.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "green"; ObjectID = "upr-zy-pCd"; */
+"upr-zy-pCd.normalTitle" = "green";
+
+/* Class = "UIButton"; normalTitle = "apricot"; ObjectID = "vkv-Kr-gIg"; */
+"vkv-Kr-gIg.normalTitle" = "apricot";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vsR-qn-X1l"; */
+"vsR-qn-X1l.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zcT-OC-AyC"; */
+"zcT-OC-AyC.normalTitle" = "Button";
