@@ -85,11 +85,13 @@ struct ToudlyWidgetEntryView: View {
     var entry: Provider.Entry
     @Environment(\.widgetFamily) var widgetFamily
     private let cachedSampleTodos: [String]
+    private let cachedTodosCount: Int
     
     init(entry: Provider.Entry) {
         self.entry = entry
         let todos = ToudlyWidgetEntryView.filteredAndSortedTodos(for: entry.date)
         self.cachedSampleTodos = ToudlyWidgetEntryView.processSampleTodos(todos: todos)
+        self.cachedTodosCount = ToudlyWidgetEntryView.countTodos(todos: todos)
     }
     
     private static func filteredAndSortedTodos(for date: Date) -> [TodoList] {
@@ -97,8 +99,6 @@ struct ToudlyWidgetEntryView: View {
             .filter { $0.date == getFormattedCurrentDate() && $0.checkbox == false }
             .sorted(by: { $0.order < $1.order })
     }
-    
-    
     
     private static func processSampleTodos(todos: [TodoList]) -> [String] {
         var todosList = todos.map { todo in
@@ -124,13 +124,21 @@ struct ToudlyWidgetEntryView: View {
         return todosList
     }
     
+    private static func countTodos(todos: [TodoList]) -> Int {
+        var todosList = todos.map { todo in
+            return "• \(todo.todoContent)"
+        }
+        
+        return todosList.count
+    }
+    
     var body: some View {
         ZStack {
             Color(.white)
             
             VStack(alignment: .leading, spacing: 5) {
                 HStack {
-                    TodoTitleView(date: todayDate, todoCount: cachedSampleTodos.count, widgetSize: widgetSize)
+                    TodoTitleView(date: todayDate, todoCount: cachedTodosCount, widgetSize: widgetSize)
                     Spacer()
                     Image("appImage")
                         .resizable()
@@ -142,9 +150,13 @@ struct ToudlyWidgetEntryView: View {
                 Divider().overlay(Color("pastelGreen"))
                 
                 VStack(alignment: .leading, spacing: listSpacing) {
-                    ForEach(cachedSampleTodos, id: \.self) { todo in
+                    //                    ForEach(cachedSampleTodos, id: \.self) { todo in
+                    //                        TodoListView(content: todo, widgetSize: widgetSize)
+                    //                    }
+                    ForEach(Array(cachedSampleTodos.enumerated()), id: \.offset) { index, todo in
                         TodoListView(content: todo, widgetSize: widgetSize)
                     }
+                    
                 }
                 .padding(5)
             }
@@ -238,7 +250,6 @@ struct TodoListView: View {
         Text("\(content)")
             .foregroundColor(Color.black)
             .font(.custom("NanumSquareRoundOTFR", size: widgetSize == "small" ? 12 : 12.5))
-        //            .font(.custom("NanumSquareRoundOTFR", size: 12))
             .lineLimit(1)
     }
     
